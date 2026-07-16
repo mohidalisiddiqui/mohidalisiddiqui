@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020804"/>
+      <stop offset="55%" stop-color="#06130a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#00ff66" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00ff66" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="nameGlow" x="-30%" y="-50%" width="160%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="screenClip">
+      <rect x="24" y="24" width="1152" height="272" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Terminal body -->
+  <rect width="1200" height="320" rx="22" fill="#000000"/>
+  <rect x="12" y="12" width="1176" height="296" rx="18" fill="url(#bg)" stroke="#00ff66" stroke-opacity="0.5" stroke-width="2"/>
+  <rect x="24" y="24" width="1152" height="272" rx="16" fill="url(#glow)"/>
+
+  <!-- Terminal title bar -->
+  <rect x="24" y="24" width="1152" height="42" rx="16" fill="#08110b"/>
+  <rect x="24" y="48" width="1152" height="18" fill="#08110b"/>
+  <circle cx="51" cy="45" r="7" fill="#ff5f57"/>
+  <circle cx="76" cy="45" r="7" fill="#febc2e"/>
+  <circle cx="101" cy="45" r="7" fill="#28c840"/>
+  <text x="600" y="51" text-anchor="middle"
+        font-family="Fira Code, Consolas, monospace"
+        font-size="15" fill="#7dffae" opacity="0.85">
+    mohid@kali: ~/cybersecurity
+  </text>
+
+  <!-- Binary rain -->
+  <g clip-path="url(#screenClip)"
+     font-family="Fira Code, Consolas, monospace"
+     font-size="17"
+     fill="#00ff66"
+     opacity="0.48">
+    <text x="50" y="-20">101001011001010101101001011010010110010101011001
+      <animate attributeName="y" from="-250" to="650" dur="9s" repeatCount="indefinite"/>
+    </text>
+    <text x="120" y="-180">010110010110100101101101001011010010110101001101
+      <animate attributeName="y" from="-300" to="620" dur="11s" repeatCount="indefinite"/>
+    </text>
+    <text x="205" y="-60">110010101001101001011010010101101001011001010110
+      <animate attributeName="y" from="-280" to="640" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="300" y="-240">001101001011010010110010101101001011010010101101
+      <animate attributeName="y" from="-320" to="620" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="390" y="-100">101101001011001010110100101101001010110010110100
+      <animate attributeName="y" from="-300" to="650" dur="10s" repeatCount="indefinite"/>
+    </text>
+    <text x="490" y="-220">011010010110010101011010010110100101101001011001
+      <animate attributeName="y" from="-340" to="630" dur="13s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="-80">110101001011010010101101001011001010110100101101
+      <animate attributeName="y" from="-300" to="650" dur="9.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="710" y="-170">001011010010110100101101001011001010110100101101
+      <animate attributeName="y" from="-330" to="640" dur="11.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="820" y="-40">101100101011010010110100101011010010110010101101
+      <animate attributeName="y" from="-290" to="650" dur="8.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="930" y="-210">010110100101101001011010010110010101101001011010
+      <animate attributeName="y" from="-330" to="630" dur="12.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="1040" y="-90">110010101101001011010010101101001011001010110100
+      <animate attributeName="y" from="-310" to="650" dur="10.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="1135" y="-250">001101001011010010110010101101001011010010101101
+      <animate attributeName="y" from="-360" to="630" dur="14s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Dark focus panel behind name -->
+  <rect x="210" y="103" width="780" height="132" rx="14"
+        fill="#020705" fill-opacity="0.76"
+        stroke="#00ff66" stroke-opacity="0.35"/>
+
+  <!-- Command prompt -->
+  <text x="245" y="137"
+        font-family="Fira Code, Consolas, monospace"
+        font-size="18" fill="#7dffae">
+    root@mohid:~$ whoami
+  </text>
+
+  <!-- Name -->
+  <text x="600" y="190" text-anchor="middle"
+        font-family="Fira Code, Consolas, monospace"
+        font-size="50" font-weight="700"
+        letter-spacing="2"
+        fill="#00ff66"
+        filter="url(#nameGlow)">
+    MOHID ALI SIDDIQUI
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="222" text-anchor="middle"
+        font-family="Fira Code, Consolas, monospace"
+        font-size="17" fill="#b6ffcf"
+        filter="url(#softGlow)">
+    Ethical Hacker in Progress | Web Security | Bug Bounty
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="956" y="205" width="11" height="21" fill="#00ff66">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom terminal text -->
+  <text x="46" y="280"
+        font-family="Fira Code, Consolas, monospace"
+        font-size="14" fill="#00ff66" opacity="0.75">
+    [ACCESS GRANTED] Initializing secure session...
+  </text>
+</svg>
