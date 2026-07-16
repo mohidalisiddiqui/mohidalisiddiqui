@@ -32,6 +32,4 @@
 - *Black Hat Python* — Justin Seitz
 - *Practical Malware Analysis* — Michael Sikorski
 
-## 📊 GitHub Stats
-
-![Mohid's GitHub stats](https://github-readme-stats.vercel.app/api?username=mohidalisiddiqui&show_icons=true&theme=dark&cache_seconds=1800)
+![Mohid's GitHub stats](https://github-readme-stats.vercel.app/api?username=mohidalisiddiqui&show_icons=true)
