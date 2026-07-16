@@ -31,3 +31,7 @@
 - *The Hacker Playbook 3* — Peter Kim
 - *Black Hat Python* — Justin Seitz
 - *Practical Malware Analysis* — Michael Sikorski
+
+## 📊 GitHub Stats
+
+![Mohid's GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=dark)
